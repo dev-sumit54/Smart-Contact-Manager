@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-th-replace="~{base::parent(~{::#content},~{::title})}">
+  <!-- <html lang="en" data-th-replace="navbar::navbar"> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
+  </head>
+  <body>
+    <div id="content">
+      <div class="bg-gray-200 w-1/2 p-4 mx-auto mt-4 text-2xl">
+        <h1 class="text-2xl font-bold">Welcome to Login page</h1>
+        <p>Youtube Channel : <span data-th-text="${youtubeChannel}"></span></p>
+        <p>Git repo link : <span data-th-text="${githubRepo}"></span></p>
+        <a data-th-href="${githubRepo}"> click here</a>
+
+        <p class="text-gray-600">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptas
+          quibusdam ad iusto, corrupti perspiciatis repudiandae alias fugit quo
+          deserunt?
+        </p>
+        <button
+          class="px-3 py-3 bg-blue-700 text-white hover:bg-blue-400 items-center"
+        >
+          click here
+        </button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>
