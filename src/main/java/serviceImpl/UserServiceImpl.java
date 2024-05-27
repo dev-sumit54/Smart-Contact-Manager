@@ -20,10 +20,10 @@ public class UserServiceImpl implements UserService {
   @Autowired
   private userRepo userRepo;
 
-  private Logger logger = LoggerFactory.getLogger(getClass());
+  private Logger loggers = LoggerFactory.getLogger(getClass());
 
   public User saveuser(User user) {
-    // setting ig randomly
+    // setting id randomly
     String userId = UUID.randomUUID().toString();
     user.setUserId(userId);
     return userRepo.save(user);
